@@ -1,0 +1,207 @@
+:root {
+  --bg-primary: hsl(210, 46%, 95%);
+  --font-primary: hsl(217, 19%, 35%);
+  --bg-command-plate: hsl(212, 23%, 69%);
+  --bg-share-btn: hsl(214, 17%, 51%);
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  font-family: "Manrope", sans-serif;
+  font-weight: 500;
+  font-size: 13px;
+}
+
+body {
+  width: 100vw;
+  height: 100vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background-color: var(--bg-primary);
+}
+
+main {
+  height: 300px;
+  max-width: 750px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+}
+
+main .left-part {
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+  height: 100%;
+  background: url(./images/drawers.jpg) no-repeat;
+  background-size: cover;
+  border-radius: 1rem 0 0 1rem;
+}
+
+main .right-part {
+  -webkit-box-flex: 1.3;
+      -ms-flex: 1.3;
+          flex: 1.3;
+  height: 100%;
+  padding: 40px;
+  background-color: white;
+  border-radius: 0 1rem 1rem 0;
+}
+
+main .right-part h1 {
+  color: var(--font-primary);
+  font-size: 22px;
+  margin-bottom: 1rem;
+  font-weight: 700;
+}
+
+main .right-part #text {
+  color: var(--bg-share-btn);
+  font-size: 13px;
+  line-height: 1.6;
+  margin-bottom: 1.5rem;
+}
+
+main .right-part .writer-info {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+main .right-part .writer-info #writer-img {
+  width: 40px;
+  border-radius: 100%;
+}
+
+main .right-part .writer-info .info {
+  margin-left: 1.5rem;
+}
+
+main .right-part .writer-info .info p {
+  font-weight: 700;
+  color: var(--font-primary);
+}
+
+main .right-part .writer-info .info span {
+  font-size: 12px;
+  color: var(--bg-command-plate);
+}
+
+main .right-part .writer-info .share-wrapper {
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+  position: relative;
+}
+
+main .right-part .writer-info .share-wrapper .share-box {
+  position: absolute;
+  width: 240px;
+  height: 55px;
+  background-color: var(--font-primary);
+  border-radius: 1rem;
+  top: -72px;
+  left: 43px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+}
+
+main .right-part .writer-info .share-wrapper .share-box p {
+  color: var(--bg-command-plate);
+  letter-spacing: 5px;
+}
+
+main .right-part .writer-info .share-wrapper .rectangular {
+  position: absolute;
+  width: 30px;
+  height: 15px;
+  border-top: 15px solid var(--font-primary);
+  border-right: 15px solid white;
+  border-left: 15px solid white;
+  top: -17px;
+  left: 150px;
+}
+
+main .right-part .writer-info .share-wrapper .share-btn-wrapper {
+  width: 30px;
+  height: 30px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background-color: var(--bg-primary);
+  border-radius: 100%;
+  margin-right: 25px;
+}
+
+main .right-part .writer-info .share-wrapper .share-btn-wrapper div {
+  -webkit-mask: url(./images/icon-share.svg);
+          mask: url(./images/icon-share.svg);
+  width: 100%;
+  height: 100%;
+  background: var(--bg-share-btn);
+  -webkit-mask-repeat: no-repeat;
+          mask-repeat: no-repeat;
+  -webkit-mask-size: initial;
+          mask-size: initial;
+  -webkit-mask-position: center;
+          mask-position: center;
+}
+
+.hidden {
+  display: none !important;
+}
+
+.clicked {
+  background: white !important;
+}
+
+.clicked2 {
+  background: var(--bg-share-btn) !important;
+}
+/*# sourceMappingURL=style.css.map */
