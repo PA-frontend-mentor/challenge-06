@@ -1,55 +1,59 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
 
-  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
-  <link rel="stylesheet" href="style.css">
-  <link rel="preconnect" href="https://fonts.gstatic.com">
-  <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@500;700&display=swap" rel="stylesheet">
-  
-  <title>Frontend Mentor | Article preview component</title>
-</head>
-<body>
-  <main>
-    <div class="left-part"></div>
+    <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@500;700&display=swap" rel="stylesheet">
+    
+    <title>Frontend Mentor | Article preview component</title>
+  </head>
+  <body>
+    <main>
+      <section class="closet-img"></section>
+      <section class="card-wrapper">
+        <h1>
+          Shift the overall look and feel by adding these wonderful touches to furniture in your home
+        </h1> 
+        <P>
+          Ever been in a room and felt like something was missing? Perhaps it felt slightly bare and uninviting. I’ve got some simple tips to help you make any room feel complete.
+        </P>
 
-    <div class="right-part">
-
-      <h1>
-        Shift the overall look and feel by adding these wonderful touches to furniture in your home
-      </h1>
-      <p id="text">
-        Ever been in a room and felt like something was missing? Perhaps it felt slightly bare and uninviting. I’ve got some simple tips to help you make any room feel complete.
-      </p>
-        <div class="writer-info">
+        <div class="writer-info-wrapper">
           <img src="./images/avatar-michelle.jpg" alt="writer's image" id="writer-img">
-          <div class="info">
-            <p>
-              Michelle Appleton
-            </p>
-            <span>
-              28 Jun 2020
-            </span>
+          <div class="writer-info">
+            <p>Michelle Appleton</p>
+            <span>28 Jun 2020</span>
           </div>
-          <div class="share-wrapper">
-            <div class="share-box hidden">
-              <p>SHARE</p>
+          <div class="share-btn-wrapper">
+            <div class="share-btn-arrow"></div>
+            <div class="share-btn-panel hidden">
+              <p>share</p>
               <img src="./images/icon-facebook.svg" alt="facebook">
               <img src="./images/icon-twitter.svg" alt="twitter">
-              <img src="./images/icon-pinterest.svg" alt="pinterest">
+              <img src="./images/icon-pinterest.svg" alt="pintrest">
             </div>
-            <div class="rectangular hidden"></div>
-            <div class="overlay"></div>
-            <div class="share-btn-wrapper">
-              <div class="arrow"></div>
-            </div>
+            <div class="share-btn-rectangle hidden"></div>
           </div>
         </div>
-    </div>
-  </main>
+      </section>
+    </main>
 
-  <script src="./app.js"></script>
-</body>
+    <script src="./app.js"></script>
+  </body>
 </html>
+
+ <!-- Shift the overall look and feel by adding these wonderful 
+  touches to furniture in your home
+
+  Ever been in a room and felt like something was missing? Perhaps 
+  it felt slightly bare and uninviting. I’ve got some simple tips 
+  to help you make any room feel complete.
+
+  Michelle Appleton
+  28 Jun 2020
+
+  Share -->

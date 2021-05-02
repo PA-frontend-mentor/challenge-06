@@ -13,4 +13,150 @@
   font-family: "Manrope", sans-serif;
   font-weight: 500;
   font-size: 13px;
+
+  user-select: none;
+}
+
+body {
+  width: 100vw;
+  min-height: 100vh;
+  background-color: var(--bg-primary);
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+main {
+  width: 80%;
+  max-width: 750px;
+  height: 280px;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  .closet-img {
+    width: 38%;
+    height: 100%;
+
+    background: url(./images/drawers.jpg) no-repeat;
+    background-size: cover;
+
+    border-radius: 1rem 0 0 1rem;
+  }
+
+  .card-wrapper {
+    flex: 1;
+    height: 100%;
+    padding: 40px 40px 0 40px;
+    background-color: white;
+
+    display: flex;
+    flex-direction: column;
+
+    h1 {
+      font-size: 21px;
+      color: var(--font-primary);
+      margin-bottom: 1rem;
+      font-weight: 700;
+    }
+
+    & > p {
+      color: var(--bg-share-btn);
+    }
+
+    .writer-info-wrapper {
+      display: flex;
+      align-items: center;
+      flex: 1;
+
+      #writer-img {
+        width: 40px;
+        border-radius: 100%;
+        margin-right: 15px;
+      }
+
+      .writer-info {
+        flex: 1;
+
+        & > p {
+          font-weight: 700;
+          color: var(--font-primary);
+        }
+
+        & > span {
+          font-size: 12px;
+          color: var(--bg-command-plate);
+        }
+      }
+
+      .share-btn-wrapper {
+        width: 30px;
+        height: 30px;
+
+        background-color: var(--bg-primary);
+
+        border-radius: 100%;
+
+        position: relative;
+
+        .share-btn-arrow {
+          width: 100%;
+          height: 100%;
+
+          mask: url(./images/icon-share.svg);
+          mask-repeat: no-repeat;
+          mask-position: center;
+
+          background-color: var(--bg-share-btn);
+
+          cursor: pointer;
+        }
+
+        .share-btn-panel {
+          width: 250px;
+          height: 55px;
+
+          display: flex;
+          justify-content: space-evenly;
+          align-items: center;
+
+          background-color: var(--font-primary);
+          border-radius: 0.5rem;
+
+          position: absolute;
+          top: -70px;
+          left: -108px;
+
+          & > p {
+            text-transform: uppercase;
+            color: var(--bg-primary);
+            letter-spacing: 5px;
+          }
+
+          & > img {
+            cursor: pointer;
+            height: 22px;
+          }
+        }
+
+        .share-btn-rectangle {
+          width: 30px;
+          height: 15px;
+
+          border-top: 15px solid var(--font-primary);
+          border-left: 15px solid white;
+          border-right: 15px solid white;
+
+          position: absolute;
+          top: -15px;
+        }
+      }
+    }
+  }
+}
+
+.hidden {
+  display: none !important;
 }
