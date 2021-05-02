@@ -27,6 +27,7 @@ body {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  overflow: hidden;
   background-color: var(--bg-primary);
 }
 
@@ -144,11 +145,16 @@ main .right-part .writer-info .share-wrapper .share-box {
   -webkit-box-pack: space-evenly;
       -ms-flex-pack: space-evenly;
           justify-content: space-evenly;
+  z-index: 2;
 }
 
 main .right-part .writer-info .share-wrapper .share-box p {
   color: var(--bg-command-plate);
   letter-spacing: 5px;
+}
+
+main .right-part .writer-info .share-wrapper .share-box > img {
+  cursor: pointer;
 }
 
 main .right-part .writer-info .share-wrapper .rectangular {
@@ -160,6 +166,15 @@ main .right-part .writer-info .share-wrapper .rectangular {
   border-left: 15px solid white;
   top: -17px;
   left: 150px;
+}
+
+main .right-part .writer-info .share-wrapper .overlay {
+  position: absolute;
+  width: 240px;
+  height: 75px;
+  top: -72px;
+  left: 43px;
+  z-index: 1;
 }
 
 main .right-part .writer-info .share-wrapper .share-btn-wrapper {
@@ -177,6 +192,7 @@ main .right-part .writer-info .share-wrapper .share-btn-wrapper {
   background-color: var(--bg-primary);
   border-radius: 100%;
   margin-right: 25px;
+  cursor: pointer;
 }
 
 main .right-part .writer-info .share-wrapper .share-btn-wrapper div {
@@ -203,5 +219,59 @@ main .right-part .writer-info .share-wrapper .share-btn-wrapper div {
 
 .clicked2 {
   background: var(--bg-share-btn) !important;
+}
+
+@media only screen and (max-width: 800px) {
+  main {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    height: 550px;
+    width: 80%;
+  }
+  main .left-part {
+    width: 100%;
+    /* height: 100%; */
+    -webkit-box-flex: 1;
+        -ms-flex: 1;
+            flex: 1;
+    height: 50%;
+    border-radius: 1rem 1rem 0 0;
+  }
+  main .right-part {
+    height: 45%;
+    padding: 2rem 2rem 0rem 2rem;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-flex: 1;
+        -ms-flex: 1;
+            flex: 1;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    border-radius: 0 0 1rem 1rem;
+  }
+  main .right-part h1 {
+    font-size: 20px;
+    margin-bottom: 2rem;
+  }
+  main .right-part p {
+    font-size: 12px;
+  }
+  main .right-part .writer-info {
+    -webkit-box-flex: 1;
+        -ms-flex: 1;
+            flex: 1;
+    -webkit-box-pack: end;
+        -ms-flex-pack: end;
+            justify-content: flex-end;
+    -webkit-box-align: end;
+        -ms-flex-align: end;
+            align-items: flex-end;
+    padding-bottom: 1.5rem;
+  }
 }
 /*# sourceMappingURL=style.css.map */
