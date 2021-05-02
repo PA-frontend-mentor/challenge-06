@@ -55,6 +55,8 @@ main {
     display: flex;
     flex-direction: column;
 
+    border-radius: 0 1rem 1rem 0;
+
     h1 {
       font-size: 21px;
       color: var(--font-primary);

@@ -71,6 +71,7 @@ main .card-wrapper {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
+  border-radius: 0 1rem 1rem 0;
 }
 
 main .card-wrapper h1 {
