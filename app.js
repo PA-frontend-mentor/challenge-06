@@ -1,14 +1,13 @@
-const shareBtn = document.querySelector(".share-btn-arrow");
-const shareParent = document.querySelector(".share-btn-wrapper");
-const sharePanel = document.querySelector(".share-btn-panel");
-const rectangle = document.querySelector(".share-btn-rectangle");
+const btn = document.getElementsByClassName("hovered");
+const btn2 = document.getElementsByClassName("share-btn-wrapper");
+const panel = document.getElementsByClassName("share-panel-wrapper");
 
-shareBtn.addEventListener("mouseover", () => {
-  sharePanel.classList = sharePanel.classList[0];
-  rectangle.classList = rectangle.classList[0];
+console.log(btn);
+
+btn[0].addEventListener("click", () => {
+  panel[0].style.cssText = "display:none !important";
 });
 
-shareParent.addEventListener("mouseleave", () => {
-  sharePanel.className += " hidden";
-  rectangle.className += " hidden";
+btn2[0].addEventListener("click", () => {
+  panel[0].style.cssText = "display:flex !important";
 });
